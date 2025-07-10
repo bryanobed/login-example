@@ -33,14 +33,11 @@ form.addEventListener("submit", (e) => {
   const validPass = "1234";
 
   if (user === validUser && pass === validPass) {
-    // Redirigir a otra página
     window.location.href = "bienvenido.html";
-  } else {
-    // Mostrar mensaje de error
+  } else {    
     errorMsg.textContent = "Usuario o contraseña incorrectos.";
     errorMsg.style.display = "block";
 
-    // Limpiar campo contraseña
     form.psw.value = "";
   }
 });

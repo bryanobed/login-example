@@ -151,5 +151,7 @@ span.psw {
 
 /* bienvenida.html */
 .error-msg {
-  color: red; display: none; margin-top: 10px;
+  color: red; 
+  display: none; 
+  margin-top: 10px;
 }

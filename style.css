@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Style para todo los inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+
+/* Style para todo los buttons */
+button {
+  background: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.title {
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.open-btn {
+  color: white;
+  cursor: pointer;
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Style extra para botón cancel */
+.cancel-btn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Centrar la img y posicionar el close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* background del Modal*/
+.modal {
+  /* display: none; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 40px auto 120px auto;
+  box-shadow: 0 8px 40px 0 rgba(0,0,0,0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 20px
+}
+
+.close:hover,
+.close:focus {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+/* Animación de Zoom abrir */
+.animate {
+  -webkit-animation: animatezoom 0.8s;
+  animation: animatezoom 0.8s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  } 
+  to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  } 
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+  display: block;
+  float: none;
+  width: 100%;
+  }
+  .cancel-btn {
+    width: 100%;
+  }
+}

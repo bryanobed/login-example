@@ -29,6 +29,8 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" name="psw" required>
 
+        <p id="error-msg" class="error-msg"></p>
+
         <button type="submit">Login</button>
         <label>
           <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -36,7 +38,7 @@
       </div>
 
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancel-btn">Cancel</button>
+        <button id="cancel-btn" type="button" class="cancel-btn">Cancel</button>
         <span class="psw">Forgot <a href="#">password?</a></span>
       </div>
     </form>

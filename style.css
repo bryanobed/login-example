@@ -5,6 +5,33 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-image: url(https://images.pexels.com/photos/7988114/pexels-photo-7988114.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(2px); 
+  z-index: -1;
+}
+
 /* Style para todo los inputs */
 input[type=text], input[type=password] {
   width: 100%;
@@ -29,18 +56,31 @@ button:hover {
   opacity: 0.8;
 }
 
+.content-inicio {
+  width: 80%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.6);
+}
+
 .title {
-  margin-top: 10px;
+  margin: 20px 0 20px 0;
   font-weight: bold;
   text-transform: uppercase;
-  margin-left: 10px;
+}
+
+.informacion {
+  padding: 0 50px;
+}
+.text {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 .open-btn {
   color: white;
   cursor: pointer;
   width: auto;
-  margin-left: 10px;
+  margin: 20px 0;
 }
 
 /* Style extra para botón cancel */
@@ -138,14 +178,18 @@ span.psw {
 }
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 375px) {
   span.psw {
-  display: block;
-  float: none;
-  width: 100%;
+    display: block;
+    float: none;
+    width: 100%;
   }
   .cancel-btn {
     width: 100%;
+  }
+
+  .text {
+    font-size: 10px;
   }
 }
 
